@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="MSTViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pP2-ll-VoZ">
+                                <rect key="frame" x="90" y="518" width="141" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go back to Mustapp">
+                                    <color key="titleColor" red="1" green="0.36862745881080627" blue="0.20392158627510071" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goBackToMustapp:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0I0-25-xKd"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KgA-Rn-22o">
+                                <rect key="frame" x="0.0" y="151" width="320" height="266"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="QSP-oH-492">
+                                        <rect key="frame" x="20" y="110" width="280" height="136"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <attributedString key="attributedText">
+                                            <fragment>
+                                                <string key="content">Hello Gentleman,
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">You have builded and installed this demo with success.
+Well done!
+
+Now try with your own apps.</string>
+                                                <attributes>
+                                                    <color key="NSColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                    <font key="NSFont" size="17" name="Avenir-Light"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="get_started_settings_big.png" translatesAutoresizingMaskIntoConstraints="NO" id="GG5-tU-brb">
+                                        <rect key="frame" x="130" y="20" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="GG5-tU-brb" firstAttribute="centerX" secondItem="KgA-Rn-22o" secondAttribute="centerX" id="9d9-jl-3qP"/>
+                                    <constraint firstItem="QSP-oH-492" firstAttribute="leading" secondItem="KgA-Rn-22o" secondAttribute="leading" constant="20" symbolic="YES" id="Lbx-Ay-PUK"/>
+                                    <constraint firstItem="GG5-tU-brb" firstAttribute="top" secondItem="KgA-Rn-22o" secondAttribute="top" constant="20" symbolic="YES" id="RYy-UX-0fT"/>
+                                    <constraint firstAttribute="bottom" secondItem="QSP-oH-492" secondAttribute="bottom" constant="20" symbolic="YES" id="g74-MA-fQv"/>
+                                    <constraint firstItem="GG5-tU-brb" firstAttribute="centerX" secondItem="QSP-oH-492" secondAttribute="centerX" id="j42-Ql-lrS"/>
+                                    <constraint firstItem="QSP-oH-492" firstAttribute="top" secondItem="GG5-tU-brb" secondAttribute="bottom" constant="30" id="syt-LV-RZ1"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="KgA-Rn-22o" secondAttribute="centerY" id="75k-rW-fxr"/>
+                            <constraint firstAttribute="centerX" secondItem="KgA-Rn-22o" secondAttribute="centerX" id="Acr-8h-hpM"/>
+                            <constraint firstItem="pP2-ll-VoZ" firstAttribute="centerX" secondItem="KgA-Rn-22o" secondAttribute="centerX" id="HZ8-wf-AJ0"/>
+                            <constraint firstItem="KgA-Rn-22o" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="gh0-d9-szG"/>
+                            <constraint firstAttribute="bottom" secondItem="pP2-ll-VoZ" secondAttribute="bottom" constant="20" symbolic="YES" id="i3L-iJ-v7t"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="get_started_settings_big.png" width="60" height="60"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
